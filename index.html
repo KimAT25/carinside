@@ -5,118 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>carinside</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>CARINSIDE!</h1>
+        <nav>
+            <div class="navpanel">
+                <a href="#Home">Home</a>
+                <a href="#Check&Buy-car">Check&Buy car</a>
+                <a href="#Car-diagnostic">Car diagnostic</a>
+                <a href="#Car-maintenance">Car maintenance</a>
+                <a href="#Auto-news">Auto News</a>
+                <a href="#Contacts">Contacts</a>
+            </div>
+        </nav>
     </header>
-    <nav>
-        <div class="navpanel">
-            <a href="#Home">Home</a>
-            <a href="#Car-diagnostic">Car diagnostic</a>
-            <a href="#Check&Buy-car">Check&Buy car</a>
-            <a href="#Car-maintenance">Car maintenance</a>
-            <a href="#Auto-news">Auto News</a>
-            <a href="#Contacts">Contacts</a>
-            <a href="#">
-                <img src="https://icon-library.net/images/icon-account/icon-account-6.jpg" alt="account-sign" height="30" width="30">
+    <main>
+        <section id="Home">
+            <h3>Carinside! - created for helping people</h3>
+            <div class="wallpaper_audi">
+                <img src="img/audi_picture.jpg" alt="audi_picture" height="450" width="600">
+            </div >
+        </section>
+        <div class="text-about-site">
+            <p>service for help you with your car</p>
+            <ul>
+                    <li>buying new/used car</li>
+                    <li>car maintenance</li>
+            </ul>
+            <p>We will save your time and money</p>
+        </div>
+        <section id="Check&Buy-car">
+            <h2>Check&Buy car</h2>
+            <div class="engine-image">
+                <img src="img/ic_engine.jpg" alt="ic_engine" height="450" width="600">
+            </div>
+            <p>If you want to order "Check and Buy" please fill the form and we will contact with you ASAP</p>
+            <form class="form">
+                <label for="Your-First&Last-Name"></label>
+                <input type="text" name="Forma" id="Your-First&Last-Name" placeholder="Your First & Last Name">
+                <label for="Email-Address"></label>
+                <input type="email" name="Forma" id="Email-Address" placeholder="Email Address">
+                <br>
+                <br>
+                <label for="Phone-Number"></label>
+                <input type="tel" name="Forma" id="Phone-Number" placeholder="+380">
+                <label for="VIN-code"></label>
+                <input type="text" name="Forma" id="VIN-code" placeholder="VIN code">
+                <br>
+                <br>
+                <input id="Sendbut" type="submit" value="SEND">
+            </form>
+        </section>
+        <section id="Car-diagnostic">
+            <h2>Car diagnostic</h2>
+            <p>Our specialist will help you with many issues of electronic system of your car</p>
+            <div>
+                <img src="img/diagnostic.jpg" alt="diagnostic" height="450" width="600">
+            </div>
+            <div>
+                <ul>
+                    <li>Find faults/Defect systems</li>
+                    <li>Check all electronic systems</li>
+                    <li>Clean particular filter</li>
+                    <li>Learning of replaced sensors</li>
+                    <li>Upgrading/Codding</li>
+                    <li>Sound systems</li>
+                </ul>
+            </div>
+        </section>
+        <br>
+        <div>
+            <p>Carinside! - it`s a service for helping people, who have a car.</p>
+            <ul>
+                <li>We can help you with buying car. New or used we will provide you the best   services for checking of 100 parameters to avoid you of buying "dead car".</li>
+                <li>We can help you with servicing of your car, to protect you from cheating and lying of "professional" service man. Especially for our women drivers.</li>
+                <li>We can help you with making diagnostic of all system in your car and keep in good condition all systems of your car.</li>
+            </ul>
+            <p>Help with insurance issues during all life of driving by your car.<p>
+        </div>
+        <div>
+            <img src="img/engine-wallpaper.jpg" alt="engine-wallpaper" height="450" width="800">
+        </div>
+        <section id="Car-maintenance">
+            <h2>Car maintenance</h2>
+            <div>
+                <ul>
+                    <li>Save and protection it`s things, what we need to be sure in our cars.</li>
+                    <li>Often we need to make maintenance of our "iron horse", so the main question what car shop to choice?</li>
+                    <li>Don`t have a headache, just contact with our experts and enjoy of life.</li>
+                    <li>Our experts will keep eyes during all needed servicing or maintenance for you car.</li>
+                    <li>You will save you nervous and money.</li>
+                </ul>
+            </div>
+            <div>
+                <p>Contact with our experts via link: <a href="#www.experts.cars.com">www.experts.cars.com</a>
+                </p>
+            </div>
+        </section>
+        <section id="Auto-news">
+            <h2>Auto News</h2>
+            <div>
+                <ul class="tests">
+                    <li><a href="https://www.infocar.ua/video/17699.html">DS 7 Crossback</a></li>
+                    <li><a href="https://www.infocar.ua/video/17698.html">Volkswagen Golf 2020</a></li>
+                    <li><a href="https://www.infocar.ua/arts/article-10425.html">Oil in gearbox: change or not?</a></li>
+                    <li><a href="https://www.infocar.ua/arts/article-10467.html">How to extend tyre`s life cycle?</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="Contacts">
+            <h2>Contacts</h2>
+            <div class="calendar">
+                <P>here have to be "calendar"</P>
+            </div>
+        </section>
+        <section>
+            <div class="star-rate">
+                <h4>If you like it, please choose the star</h4>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </section>
+        <div class="contact-info">
+            <ul>
+                <li>Stryi</li>
+                <li>Lviv region</li>
+                <li>Olga Basarab str. 15</li>
+            </ul>
+            <br>
+            <ul>
+                    <li>email</li>
+                    <li>carsinside!@gmail.com</li>
+             </ul>
+            <br>
+             <ul>
+                <li>experts:</li>
+                <li>+38(093) 933 33 33</li>
+                <li>+38(067) 067 77 77</li>
+            </ul>
+            <br>
+            <ul>
+                 <li>Managers:</li>
+                <li>800 777 555</li>
+            </ul>
+         </div>
+        <div class="goole-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2603.517226258613!2d23.87192131510448!3d49.26659577983225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473a699251572083%3A0xba705f0698fdb950!2z0LLRg9C70LjRhtGPINCe0LvRjNCz0Lgg0JHQsNGB0LDRgNCw0LEsIDE1LCDQodGC0YDQuNC5LCDQm9GM0LLRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDgyNDAx!5e0!3m2!1suk!2sua!4v1572861001096!5m2!1suk!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="">
+            </iframe>
+        </div>
+        <div class="links">
+            <a href="#Facebook">
+                <img src="img/facebook-logo.png" alt="facebook">
+            </a>
+            <a href="#Instagram">
+                <img src="img/instagram-logo.png" alt="instagram">
+            </a>
+            <a href="#Viber">
+                <img src="img/viber-logo.png" alt="viber">
+            </a>
+            <a href="#Telegram">
+                 <img src="img/telegram-logo.png" alt="telegram">
             </a>
         </div>
-    </nav>
-    <section>
-        <h3>Carinside! - created for helping people</h3>
-    </section>
-    <div id="wallpaper_audi">
-        <img src="img/audi_picture.jpg" alt="audi_picture" height="450" width="600">
-    </div>
-        <p>service for help you with your car</p>
-        <ul>
-                <li>buying new/used car</li>
-                <li>car maintenance</li>
-        </ul>
-         <p>We will save your time and money</p>
-    <section>
-        <h2>Check&Buy car</h2>
-        <div>
-            <img src="img/ic_engine.jpg" alt="ic_engine" height="450" width="600">
-        </div>
-        <p>If you want to order "Check and Buy" please fill the form and we will contact with you ASAP</p>
-        <form>
-            <label for="Your-First&Last-Name"></label>
-            <input type="text" name="Forma" id="Your-First&Last-Name" placeholder="Your First & Last Name">
-            <label for="Email-Address"></label>
-            <input type="email" name="Forma" id="Email-Address" placeholder="Email Address">
-            <br>
-            <br>
-            <label for="Phone-Number"></label>
-            <input type="tel" name="Forma" id="Phone-Number" placeholder="+380">
-            <label for="VIN-code"></label>
-            <input type="text" name="Forma" id="VIN-code" placeholder="VIN code">
-            <br>
-            <br>
-            <input id="Sendbut" type="submit" value="SEND">
-        </form>
-    </section>
-    <section>
-        <h2>Car diagnostic</h2>
-        <p>Our specialist will help you with many issues of electronic system of your car</p>
-        <div>
-            <img src="img/diagnostic.jpg" alt="diagnostic" height="450" width="600">
-        </div>
-        <div>
-            <ul>
-                <li>Find faults/Defect systems</li>
-                <li>Check all electronic systems</li>
-                <li>Clean particular filter</li>
-                <li>Learning of replaced sensors</li>
-                <li>Upgrading/Codding</li>
-                <li>Sound systems</li>
-            </ul>
-        </div>
-    </section>
-    <br>
-    <div>
-        <p>Carinside! - it`s a service for helping people, who have a car.</p>
-        <ul>
-            <li>We can help you with buying car. New or used we will provide you the best   services for checking of 100 parameters to avoid you of buying "dead car".</li>
-            <li>We can help you with servicing of your car, to protect you from cheating and lying of "professional" service man. Especially for our women drivers.</li>
-            <li>We can help you with making diagnostic of all system in your car and keep in good condition all systems of your car.</li>
-        </ul>
-        <p>Help with insurance issues during all life of driving by your car.<p>
-    </div>
-    <div>
-        <img src="img/engine-wallpaper.jpg" alt="engine-wallpaper" height="450" width="800">
-    </div>
-    <section>
-        <h2>Car maintenance</h2>
-        <div>
-            <ul>
-                <li>Save and protection it`s things, what we need to be sure in our cars.</li>
-                <li>Often we need to make maintenance of our "iron horse", so the main question what car shop to choice?</li>
-                <li>Don`t have a headache, just contact with our experts and enjoy of life.</li>
-                <li>Our experts will keep eyes during all needed servicing or maintenance for you car.</li>
-                <li>You will save you nervous and money.</li>
-            </ul>
-        </div>
-        <div>
-            <p>Contact with our experts via link: <a href="#www.experts.cars.com">www.experts.cars.com</a>
-            </p>
-        </div>
-    </section>
-    <section>
-        <h2>Auto News</h2>
-        <div>
-            <ul id="tests">
-                <li><a href="https://www.infocar.ua/video/17699.html">DS 7 Crossback</a></li>
-                <li><a href="https://www.infocar.ua/video/17698.html">Volkswagen Golf 2020</a></li>
-                <li><a href="https://www.infocar.ua/arts/article-10425.html">Oil in gearbox: change or not?</a></li>
-                <li><a href="https://www.infocar.ua/arts/article-10467.html">How to extend tyre`s life cycle?</a></li>
-            </ul>
-        </div>
-    </section>
-    <section>
-        <h2>Contacts</h2>
-        <div></div>
-    </section>
+    </main>
+    <footer class="footer">
+    <p>© 2019 <span class="footer-text-1">"KimAT"</span> all rights reserved<p>
+    </footer>
 </body>
 </html>
