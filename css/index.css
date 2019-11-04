@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    color:white;
+    background: black;
+    font-family: 'Aldrich', sans-serif;
+}
+h1 {
+    color: red;
+    font-size: 55px;
+}
+.header {
+    height: 80px;
+    margin: 1px 1px 1px 1px;
+    padding: 20px 5px 20px 5px;
+}
+nav {
+    overflow: hidden;
+    float: left;
+}
+nav li {
+    float:left;
+    list-style:none;
+}
+nav li a {
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+    font-size:25px;
+    padding:0px 30px;
+}
+nav li a:hover {
+    background: white;
+    color: black;
+}
+
+.main-text {
+    position:relative;
+    text-align:right;
+    color: red;
+    font-size:25px;
+    top: 50px;
+    }
+.wallpaper-audi {
+    width: 95%;
+    height: 45%;
+}
