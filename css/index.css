@@ -49,10 +49,16 @@ header nav .menu a:hover {
     color: black;
     cursor: pointer;
 }
+@media screen and (max-widt: 750px) {
+    header .menu a {
+        display: block;
+    }
+}
 header .banner {
     background-image: url(../img/audi_picture.jpg);
     background-position: top, center;
     background-size: cover;
+    display:flex;
     min-height: 475px;
     color:black;
 }
@@ -74,5 +80,33 @@ main .text-about-site {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
     main .expl-start {
-        grid-column: 1/4;
+        grid-column: 2/4;
     }
+main .expl-list {
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+    main ul {
+        grid-column: 3/4;
+    }
+
+main .text-about-site-end {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr;
+}
+    main .expl-end {
+        grid-column: 5/6;
+    }
+.text-about-site, .expl-list, .text-about-site-end {
+    background: white;
+    color:black;
+    font-size: 1.1rem;
+    font-family: 'Aldrich', sans-serif;
+    text-transform: uppercase;
+    border: transparent;
+    padding: 0;
+    margin: 0;
+}
+.squars {
+    list-style-type: square;
+}
