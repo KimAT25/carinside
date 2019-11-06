@@ -39,6 +39,7 @@ header nav .menu a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--main-color);
+    border: 1px solid transparent;
     padding: 5px;
 }
 header nav .menu a:hover {
