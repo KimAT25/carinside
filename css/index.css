@@ -1,53 +1,78 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Barlow+Condensed&display=swap');
+
+:root {
+     font-family:'Barlow Condensed', sans-serif;
+     --main-color:white;
+     --acent-color:black;
+     scroll-behavior: smooth;
+    }
+body {
+    max-width: 980px;
+    margin: auto;
+    background: black;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6, p, div, header, main, footer {
     margin: 0;
     padding: 0;
 }
-html,body {
-    width: 100%;
-    height: 100%;
+header .logo {
+    display: flex;
+    font-family:'Aldrich', sans-serif;
+    font-weight: bold;
+    color: red;
+    font-size: 3rem;
+    padding: 15px 0 5px 15px;
 }
-body {
-    color:white;
-    background: black;
+header nav .menu {
+    display:flex;
+    list-style-type:none;
+    justify-content:space-around;
+    padding: 0;
+}
+header nav .menu {
+    font-size: 0.95rem;
+    text-align: center;
     font-family: 'Aldrich', sans-serif;
 }
-h1 {
-    color: red;
-    font-size: 55px;
-}
-.header {
-    height: 80px;
-    margin: 1px 1px 1px 1px;
-    padding: 20px 5px 20px 5px;
-}
-nav {
-    overflow: hidden;
-    float: left;
-}
-nav li {
-    float:left;
-    list-style:none;
-}
-nav li a {
-    font-weight: normal;
+header nav .menu a {
     text-decoration: none;
-    color: white;
-    font-size:25px;
-    padding:0px 30px;
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: 5px;
 }
-nav li a:hover {
-    background: white;
+header nav .menu a:hover {
+    padding: 0.35em 0.8em;
+    background:white;
+    border-radius: 0.3em;
+    transition: all 0.4s;
     color: black;
+    cursor: pointer;
 }
-
-.main-text {
-    position:relative;
-    text-align:right;
-    color: red;
-    font-size:25px;
-    top: 50px;
+header .banner {
+    background-image: url(../img/audi_picture.jpg);
+    background-position: top, center;
+    background-size: cover;
+    min-height: 475px;
+    color:black;
+}
+header .banner {
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+    header .main-text {
+        grid-column: 3;
+        grid-row: 1;
+        text-align: right;
+        color:red;
+        margin-top:1rem;
+        margin-right:1rem;
     }
-.wallpaper-audi {
-    width: 95%;
-    height: 45%;
+main .text-about-site {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+    main .expl-start {
+        grid-column: 1/4;
+    }
