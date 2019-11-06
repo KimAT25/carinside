@@ -77,25 +77,25 @@ header .banner {
     }
 main .text-about-site {
     display:grid;
-    grid-template-columns: 1fr 2f;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
 }
     main .expl-start {
-        grid-column: 2;
+        grid-column: 2/4;
     }
 main .expl-list {
     display:grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
 }
     main ul {
-        grid-column: 3/4;
+        grid-column: 2;
     }
 
 main .text-about-site-end {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
 }
     main .expl-end {
-        grid-column: 5/5;
+        grid-column: 2;
     }
 .text-about-site, .expl-list, .text-about-site-end {
     background: white;
