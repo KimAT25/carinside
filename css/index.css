@@ -118,10 +118,10 @@ main .text-about-site-end {
     font-family: 'Aldrich', sans-serif;
     text-transform: uppercase;
     border: transparent;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 }
-.squars {
+main .squars {
     list-style-type: square;
     margin: 5px;
 }
@@ -129,4 +129,41 @@ main .text-about-site-end {
     .text-about-site, .expl-list, .text-about-site-end {
         font-size: 0.8rem;
     }
+}
+main section h2 {
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.15rem;
+    margin: 5rem 0 0 0;
+}
+main section .check-buy-car {
+    background-color:white;
+    margin: 0;
+    padding: 45px 0;
+    color: black;
+    border-bottom: 7px solid black
+}
+main section .check-buy-car .back-color-cbc {
+    position: relative;
+    top: 42px;
+    background-color: black;
+    color: white;
+    border-radius: 0 10px 0 0;
+    padding: 10px 20px 5px 20px;
+}
+
+main section .engine-image .engine-image-pic {
+    display: block;
+    margin-left: auto;
+    width: 95%;
+    height: auto;
+    padding: 0;
+    z-index: 1;
+}
+main section .text-check-and-buy {
+    text-align: justify;
+    font-size: 1.9rem;
+    padding-left: 50px;
+    font-style: italic;
+}
+main section .check-and-buy {
 }

@@ -1,0 +1,1 @@
+const areYouMana = prompt('Are you mama?');
