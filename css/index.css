@@ -132,7 +132,7 @@ main .squars {
 }
 main section h2 {
     font-family: 'Aldrich', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     margin: 5rem 0 0 0;
 }
 main section .check-buy-car {
@@ -140,7 +140,6 @@ main section .check-buy-car {
     margin: 0;
     padding: 45px 0;
     color: black;
-    border-bottom: 7px solid black
 }
 main section .check-buy-car .back-color-cbc {
     position: relative;
@@ -159,13 +158,13 @@ main section .engine-image .engine-image-pic {
     padding: 0;
     z-index: 1;
 }
-main section .small-screen .text-check-and-buy {
+main section .small-screen .small-screen-forma .text-check-and-buy {
     text-align: justify;
     font-size: 1.9rem;
-    padding-left: 50px;
     font-style: italic;
+    margin: 0 0 0 45px;
 }
-main section .small-screen .check-and-buy {
+main section .small-screen .small-screen-forma .check-and-buy {
     display: block;
     float: right;
     max-width: 100%;
@@ -209,18 +208,30 @@ input[type=submit]:hover {
     }
     main section .small-screen {
         background-image: url(../img/ic_engine.jpg);
-        background-position: top,center;
+        background-position: top, center;
         background-size: cover;
         min-height: 350px;
     }
-    main section .small-screen .text-check-and-buy {
+    main section .small-screen-forma {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 4fr 2fr 4fr;
+    }
+        .text-check-and-buy {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .check-and-buy {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+    main section .small-screen .small-screen-forma .text-check-and-buy, .check-and-buy {
         font-size: 1rem;
         color:black;
-        width: 45%;
-        padding: 0;
-        margin: 0 auto;
+        margin: 0;
+        /* width: 100%; */
     }
-    main section .small-screen .small-screen-bottom .check-and-buy {
+    main section .small-screen .small-screen-forma .check-and-buy {
         border: transparent;
         margin: 0;
     }
@@ -230,6 +241,7 @@ input[type=submit]:hover {
         margin: 5px 5px 5px 5px;
         border: transparent;
         text-align: left;
+        width: 45%;
     }
     input[type=submit] {
         padding: 5px 0 5px 0;
@@ -237,8 +249,18 @@ input[type=submit]:hover {
         margin: 5px 0 5px 0;
 
     }
-    main section .sendbut {
+    main section .small-screen .small-screen-forma .sendbut {
         display: flex;
         justify-content: center;
+    }
+    @media screen and (max-width: 450px) {
+        input[type=text], input[type=email], input[type=tel] {
+            padding: 5px 0 5px 0;
+            font-size: 0.65rem;
+            margin: 5px 5px 5px 5px;
+            border: transparent;
+            text-align: left;
+            width: 65%;
+        }
     }
 }
