@@ -159,11 +159,86 @@ main section .engine-image .engine-image-pic {
     padding: 0;
     z-index: 1;
 }
-main section .text-check-and-buy {
+main section .small-screen .text-check-and-buy {
     text-align: justify;
     font-size: 1.9rem;
     padding-left: 50px;
     font-style: italic;
 }
-main section .check-and-buy {
+main section .small-screen .check-and-buy {
+    display: block;
+    float: right;
+    max-width: 100%;
+    padding: 0;
+    margin: 75px 0 0 0;
+    border: 2px solid white;
+    border-right: transparent;
+    border-radius: 15px 0 0 15px;
+}
+input[type=text], input[type=email], input[type=tel] {
+    padding: 15px 0 15px 0px;
+    width: 45%;
+    background-color: rgb(173, 173, 173);
+    margin: 30px 0 20px 30px;
+    font-family: 'Aldrich', sans-serif;
+    border: transparent;
+
+}
+::placeholder {
+    color:white;
+}
+input[type=submit] {
+    padding: 10px 0 10px 0;
+    width: 25%;
+    color:white;
+    background-color: rgb(184, 54, 54);
+    border: transparent;
+    border-radius: 5px;
+    margin: 5px 0 10px 30px;
+    font-family: 'Aldrich', sans-serif;
+    font-weight: bold;
+}
+input[type=submit]:hover {
+    background-color: rgb(20, 92, 20);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+    .engine-image {
+        display: none;
+    }
+    main section .small-screen {
+        background-image: url(../img/ic_engine.jpg);
+        background-position: top,center;
+        background-size: cover;
+        min-height: 350px;
+    }
+    main section .small-screen .text-check-and-buy {
+        font-size: 1rem;
+        color:black;
+        width: 45%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    main section .small-screen .small-screen-bottom .check-and-buy {
+        border: transparent;
+        margin: 0;
+    }
+    input[type=text], input[type=email], input[type=tel] {
+        padding: 5px 0 5px 0;
+        font-size: 0.65rem;
+        margin: 5px 5px 5px 5px;
+        border: transparent;
+        text-align: left;
+    }
+    input[type=submit] {
+        padding: 5px 0 5px 0;
+        font-size: 0.8rem;
+        margin: 5px 0 5px 0;
+
+    }
+    main section .sendbut {
+        display: flex;
+        justify-content: center;
+    }
 }
