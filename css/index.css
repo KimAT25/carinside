@@ -156,7 +156,6 @@ main section .engine-image .engine-image-pic {
     width: 95%;
     height: auto;
     padding: 0;
-    z-index: 1;
 }
 main section .small-screen-forma .text-check-and-buy {
     text-align: justify;
@@ -168,9 +167,8 @@ main section .small-screen-forma .check-and-buy {
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-    max-width: 100%;
     padding: 0;
-    margin: 75px 0 0 100px;
+    margin: 75px 0 0 50px;
     border: 2px solid white;
     border-right: transparent;
     border-radius: 15px 0 0 15px;
@@ -214,15 +212,15 @@ input[type=submit]:hover {
     }
     main section .small-screen-forma {
         display: grid;
-        grid-template-columns: 200px 2fr;
+        grid-template-columns: 20px 90px 1fr 2fr;
         grid-template-rows: 150px 4fr;
     }
         .text-check-and-buy {
-            grid-column: 2/3;
+            grid-column: 3/5;
             grid-row: 3/4;
         }
         .check-and-buy {
-            grid-column: 2/3;
+            grid-column: 3/5;
             grid-row: 4/5;
         }
     main section .small-screen-forma .text-check-and-buy, .check-and-buy {
@@ -237,32 +235,52 @@ input[type=submit]:hover {
     }
     main section .small-screen-forma .check-and-buy {
         border-radius: 0;
-    }
-
-    
-    main section .small-screen-forma .check-and-buy {
         border: transparent;
         background-color:black;
         opacity: 0.9;
-        margin: 0;
+        margin: 0; 
     }
     input[type=text], input[type=email], input[type=tel] {
         padding: 5px 0 5px 0;
-        font-size: 0.65rem;
+        font-size: 0.5rem;
         margin: 10px 0 5px 10px;
         border: transparent;
         text-align: left;
-        width: 45%;
+        width:45%;
         border-radius: 4px;
     }
     input[type=submit] {
         padding: 5px 20px 5px 20px;
         font-size: 0.8rem;
         margin: 5px 0 5px 0;
-
     }
-    main section .small-screen-forma .check-and-buy .sendbut {
-        display: flex;
-        justify-content: center;
-    }
+}
+main section .car-diagnostic-main-h {
+    background-color: white;
+}
+main section .car-diagnostic-h .white-color-cbc {
+    background-color: white;
+    color: black;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px 5px 20px;
+    margin-left:40px;  
+}
+main section .car-diagnostic-back {
+    background-color: white;
+}
+main section .car-diagnostic-main-text {
+    margin:0 25px 15px 25px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+    color:black;
+}
+main section .car-diagnostic-back .pic-diagnostic {
+    color:black;
+}
+main section .car-diagnostic-back .pic-diagnostic {
+    background-image: url(../img/diagnostic.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;  
 }
