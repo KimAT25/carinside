@@ -411,7 +411,7 @@ main .carinside-description .carinside-list-text .arrows {
 }
 main .engine-wallpaper {
   margin: 0;
-  background-image: black;
+  background-color: black;
   padding: 50px 0 0 0;
 }
 main .engine-wallpaper .pic-engine-wallpaper {
