@@ -301,7 +301,7 @@ main section .car-diagnostic-general .banner-pic-diagnostic {
   background-image: url(../img/diagnostic.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 350px;
+  height: 500px;
   margin: 0 0 0 75px;
   border-radius: 10px;
   background-color: white;
@@ -373,10 +373,10 @@ main section .car-diagnostic-general .smalldisp-diagnostic {
   }
   main section .car-diagnostic-general .smalldisp-diagnostic {
     display: block;
-    /* margin: 0 0 50px 0; */
   }
   main section .car-diagnostic-general .img-small-diagnostic {
     display: flex;
+    width: 100%;
     padding: 0;
     border-radius: 5px 5px 0 0;
   }
