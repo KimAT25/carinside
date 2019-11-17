@@ -1,286 +1,420 @@
 @import url('https://fonts.googleapis.com/css?family=Aldrich|Barlow+Condensed&display=swap');
 
 :root {
-     font-family:'Barlow Condensed', sans-serif;
-     --main-color:white;
-     --acent-color:black;
-     scroll-behavior: smooth;
-    }
-body {
-    min-width: 310px;
-    max-width: 980px;
-    margin: auto;
-    background: black;
-    color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  --main-color: white;
+  --acent-color: black;
+  scroll-behavior: smooth;
 }
-h1, h2, h3, h4, h5, h6, p, div, header, main, footer {
-    margin: 0;
-    padding: 0;
+body {
+  min-width: 310px;
+  max-width: 980px;
+  margin: auto;
+  background: black;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+header,
+main,
+footer {
+  margin: 0;
+  padding: 0;
 }
 header .logo {
-    display: flex;
-    font-family:'Aldrich', sans-serif;
-    font-weight: bold;
-    color: red;
-    font-size: 3rem;
-    padding: 15px 0 5px 15px;
+  display: flex;
+  font-family: 'Aldrich', sans-serif;
+  font-weight: bold;
+  color: red;
+  font-size: 3rem;
+  padding: 15px 0 5px 15px;
 }
 header nav .menu {
-    display:flex;
-    list-style-type:none;
-    justify-content:space-around;
-    padding: 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 0;
 }
 
 header nav .menu {
-    font-size: 0.95rem;
-    text-align: center;
-    font-family: 'Aldrich', sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+  font-family: 'Aldrich', sans-serif;
 }
 header nav .menu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--main-color);
-    padding: 7px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-color);
+  padding: 7px;
 }
 header nav .menu a:hover {
-    background:white;
-    border-radius: 0.3em;
-    transition: all 0.4s;
-    color: black;
-    cursor: pointer;
+  background: white;
+  border-radius: 0.3em;
+  transition: all 0.4s;
+  color: black;
+  cursor: pointer;
 }
 header .banner {
-    background-image: url(../img/audi_picture_small.jpg);
-    background-position: top, center;
-    background-size: cover;
-    display:flex;
-    min-height: 450px;
-    color:black;
+  background-image: url(../img/audi_picture_small.jpg);
+  background-position: top, center;
+  background-size: cover;
+  display: flex;
+  min-height: 450px;
+  color: black;
 }
 header .banner {
-    display:grid;
-    grid-auto-columns: minmax(25px, auto);
+  display: grid;
+  grid-auto-columns: minmax(25px, auto);
 
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
-    header .main-text {
-        grid-column: 1/2;
-        justify-self: end;
-        margin-top:1rem;
-        margin-right:1rem;
-        color:rgb(197, 11, 11);
-    }
+header .main-text {
+  grid-column: 1/2;
+  justify-self: end;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: rgb(197, 11, 11);
+}
 header .banner .main-text-underline {
-        text-transform: uppercase;
-    }
+  text-transform: uppercase;
+}
 @media screen and (max-width: 750px) {
-    header nav .menu {
-        display: block;
-    }
-    header .logo {
-        justify-content: center;
-    }
-    li {
-        padding: 5px 0 5px;
-    }
+  header nav .menu {
+    display: block;
+  }
+  header .logo {
+    justify-content: center;
+  }
+  li {
+    padding: 5px 0 5px;
+  }
 }
 main .text-about-site {
-    display:grid;
-    grid-auto-columns: 2fr minmax(45px, auto);
-    justify-items: start;
+  display: grid;
+  grid-auto-columns: 2fr minmax(45px, auto);
+  justify-items: start;
 }
-    main .expl-start {
-        grid-column: 1/2;
-    }
+main .expl-start {
+  grid-column: 1/2;
+}
 main .expl-list {
-    display:grid;
-    grid-auto-columns: minmax(15px, auto) 2fr minmax(85px, auto);
-    justify-items: center;
+  display: grid;
+  grid-auto-columns: minmax(15px, auto) 2fr minmax(85px, auto);
+  justify-items: center;
 }
-    .expl-list .squars {
-        grid-column: 2/3;
-    }
+.expl-list .squars {
+  grid-column: 2/3;
+}
 
 main .text-about-site-end {
-    display:grid;
-    grid-auto-columns: 1fr minmax(85px, auto);
-    justify-items: center;
-    text-align: right;
+  display: grid;
+  grid-auto-columns: 1fr minmax(85px, auto);
+  justify-items: center;
+  text-align: right;
 }
-    main .expl-end {
-        grid-column: 2/2;
-    }
-.text-about-site, .expl-list, .text-about-site-end {
-    background: white;
-    color:black;
-    font-size: 1.1rem;
-    font-family: 'Aldrich', sans-serif;
-    text-transform: uppercase;
-    border: transparent;
-    padding: 20px;
-    margin: 0;
+main .expl-end {
+  grid-column: 2/2;
+}
+.text-about-site,
+.expl-list,
+.text-about-site-end {
+  background: white;
+  color: black;
+  font-size: 1.1rem;
+  font-family: 'Aldrich', sans-serif;
+  text-transform: uppercase;
+  border: transparent;
+  padding: 20px;
+  margin: 0;
 }
 main .squars {
-    list-style-type: square;
-    margin: 5px;
+  list-style-type: square;
+  margin: 5px;
 }
 @media screen and (max-width: 750px) {
-    .text-about-site, .expl-list, .text-about-site-end {
-        font-size: 0.8rem;
-    }
+  .text-about-site,
+  .expl-list,
+  .text-about-site-end {
+    font-size: 0.8rem;
+  }
 }
 main section h2 {
-    font-family: 'Aldrich', sans-serif;
-    font-size: 1.2rem;
-    margin: 5rem 0 0 0;
+  font-family: 'Aldrich', sans-serif;
+  font-size: 1.2rem;
+  margin: 5rem 0 0 0;
 }
 main section .check-buy-car {
-    background-color:white;
-    margin: 0;
-    padding: 45px 0;
-    color: black;
+  background-color: white;
+  margin: 0;
+  padding: 45px 0;
+  color: black;
 }
 main section .check-buy-car .back-color-cbc {
-    position: relative;
-    top: 42px;
-    background-color: black;
-    color: white;
-    border-radius: 0 10px 0 0;
-    padding: 10px 20px 5px 20px;
+  position: relative;
+  top: 42px;
+  background-color: black;
+  color: white;
+  border-radius: 0 10px 0 0;
+  padding: 10px 20px 5px 20px;
 }
 
 main section .engine-image .engine-image-pic {
-    display: block;
-    margin-left: auto;
-    width: 95%;
-    height: auto;
-    padding: 0;
+  display: block;
+  margin-left: auto;
+  width: 95%;
+  height: auto;
+  padding: 0;
 }
 main section .small-screen-forma .text-check-and-buy {
-    text-align: justify;
-    font-size: 1.9rem;
-    font-style: italic;
-    margin: 0 0 0 45px;
+  text-align: justify;
+  font-size: 1.9rem;
+  font-style: italic;
+  margin: 0 0 0 45px;
 }
 main section .small-screen-forma .check-and-buy {
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    padding: 0;
-    margin: 75px 0 0 50px;
-    border: 2px solid white;
-    border-right: transparent;
-    border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 75px 0 0 50px;
+  border: 2px solid white;
+  border-right: transparent;
+  border-radius: 15px 0 0 15px;
 }
-input[type=text], input[type=email], input[type=tel] {
-    padding: 15px 0 15px 0;
-    width: 45%;
-    background-color: rgb(173, 173, 173);
-    margin: 30px 0 20px 30px;
-    font-family: 'Aldrich', sans-serif;
-    border: transparent;
-
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+  padding: 15px 0 15px 0;
+  width: 45%;
+  background-color: rgb(173, 173, 173);
+  margin: 30px 0 20px 30px;
+  font-family: 'Aldrich', sans-serif;
+  border: transparent;
 }
 ::placeholder {
-    color:white;
+  color: white;
 }
-input[type=submit] {
-    padding: 10px 45px 10px 45px;
-    color:white;
-    background-color: rgb(184, 54, 54);
-    border: transparent;
-    border-radius: 5px;
-    margin: 5px 0 10px 30px;
-    font-family: 'Aldrich', sans-serif;
-    font-weight: bold;
+input[type='submit'] {
+  padding: 10px 45px 10px 45px;
+  color: white;
+  background-color: rgb(184, 54, 54);
+  border: transparent;
+  border-radius: 5px;
+  margin: 5px 0 10px 30px;
+  font-family: 'Aldrich', sans-serif;
+  font-weight: bold;
 }
-input[type=submit]:hover {
-    background-color: rgb(20, 92, 20);
-    transition: all 0.5s;
-    cursor: pointer;
+input[type='submit']:hover {
+  background-color: rgb(20, 92, 20);
+  transition: all 0.5s;
+  cursor: pointer;
 }
 @media screen and (max-width: 750px) {
-    .engine-image {
-        display: none;
-    }
-    main section .small-screen-forma {
-        background-image: url(../img/ic_engine.jpg);
-        background-position: top, center;
-        background-size: cover;
-        min-height: 350px;
-    }
-    main section .small-screen-forma {
-        display: grid;
-        grid-template-columns: 20px 90px 1fr 2fr;
-        grid-template-rows: 150px 4fr;
-    }
-        .text-check-and-buy {
-            grid-column: 3/5;
-            grid-row: 3/4;
-        }
-        .check-and-buy {
-            grid-column: 3/5;
-            grid-row: 4/5;
-        }
-    main section .small-screen-forma .text-check-and-buy, .check-and-buy {
-        font-size: 1rem;
-        color:white;
-        padding: 5px 10px 0 10px;
-        margin: 0;
-        background-color: black;
-        border-radius: 15px 0 0 0;
-        opacity: 0.9;
-        text-align: center;
-    }
-    main section .small-screen-forma .check-and-buy {
-        border-radius: 0;
-        border: transparent;
-        background-color:black;
-        opacity: 0.9;
-        margin: 0; 
-    }
-    input[type=text], input[type=email], input[type=tel] {
-        padding: 5px 0 5px 0;
-        font-size: 0.5rem;
-        margin: 10px 0 5px 10px;
-        border: transparent;
-        text-align: left;
-        width:45%;
-        border-radius: 4px;
-    }
-    input[type=submit] {
-        padding: 5px 20px 5px 20px;
-        font-size: 0.8rem;
-        margin: 5px 0 5px 0;
-    }
+  .engine-image {
+    display: none;
+  }
+  main section .small-screen-forma {
+    background-image: url(../img/ic_engine.jpg);
+    background-position: top, center;
+    background-size: cover;
+    min-height: 350px;
+  }
+  main section .small-screen-forma {
+    display: grid;
+    grid-template-columns: 20px 90px 1fr 2fr;
+    grid-template-rows: 150px 4fr;
+  }
+  .text-check-and-buy {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+  .check-and-buy {
+    grid-column: 3/5;
+    grid-row: 4/5;
+  }
+  main section .small-screen-forma .text-check-and-buy,
+  .check-and-buy {
+    font-size: 1rem;
+    color: white;
+    padding: 5px 10px 0 10px;
+    margin: 0;
+    background-color: black;
+    border-radius: 15px 0 0 0;
+    opacity: 0.9;
+    text-align: center;
+  }
+  main section .small-screen-forma .check-and-buy {
+    border-radius: 0;
+    border: transparent;
+    background-color: black;
+    opacity: 0.9;
+    margin: 0;
+  }
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'] {
+    padding: 5px 0 5px 0;
+    font-size: 0.5rem;
+    margin: 10px 0 5px 10px;
+    border: transparent;
+    text-align: left;
+    width: 45%;
+    border-radius: 4px;
+  }
+  input[type='submit'] {
+    padding: 5px 20px 5px 20px;
+    font-size: 0.8rem;
+    margin: 5px 0 5px 0;
+  }
 }
 main section .car-diagnostic-main-h {
-    background-color: white;
+  background-color: white;
 }
 main section .car-diagnostic-h .white-color-cbc {
-    background-color: white;
-    color: black;
-    border-radius: 10px 10px 0 0;
-    padding: 10px 20px 5px 20px;
-    margin-left:40px;  
+  background-color: white;
+  color: black;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px 5px 20px;
+  margin-left: 40px;
 }
-main section .car-diagnostic-back {
-    background-color: white;
+main section .car-diagnostic-general {
+  background-color: white;
 }
 main section .car-diagnostic-main-text {
-    margin:0 25px 15px 25px;
+  margin: 0 25px 15px 25px;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 1.75rem;
+  color: black;
+}
+main section .car-diagnostic-general .banner-pic-diagnostic {
+  color: black;
+}
+main section .car-diagnostic-general .banner-pic-diagnostic {
+  background-image: url(../img/diagnostic.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 350px;
+  margin: 0 0 0 75px;
+  border-radius: 10px;
+  background-color: white;
+}
+main
+  section
+  .car-diagnostic-general
+  .banner-pic-diagnostic
+  .list-car-diagnostic {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 35%;
+  padding: 10px;
+  background-color: black;
+  opacity: 0.95;
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'Aldrich', sans-serif;
+  border-radius: 10px;
+}
+li {
+  padding: 5px 0 5px 0;
+}
+main section .car-diagnostic-general .smalldisp-diagnostic {
+  display: none;
+}
+@media screen and (max-width: 750px) {
+  main section .car-diagnostic-general .banner-pic-diagnostic {
+    display: none;
+  }
+  main section .car-diagnostic-general .car-diagnostic-main-text {
+    margin: 0 25px 15px 25px;
     padding-top: 30px;
+    text-align: right;
+    font-size: 1.15rem;
+    color: black;
+  }
+  main section .car-diagnostic-general .smalldisp-diagnostic {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 50px 1fr 50px;
+  }
+  .img-small-diagnostic {
+    border-radius: 5px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 100%;
+  }
+  .list-diagnostic {
+    grid-column: 2/3;
+    grid-row: 3/5;
+  }
+  main section .car-diagnostic-general .smalldisp-diagnostic .list-diagnostic {
+    position: relative;
+    right: 15px;
+    background-color: black;
+    list-style-type: none;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 25px 5px 25px 5px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  main section .car-diagnostic-general .banner-pic-diagnostic {
+    display: none;
+  }
+  main section .car-diagnostic-general .smalldisp-diagnostic {
+    display: block;
+    /* margin: 0 0 50px 0; */
+  }
+  main section .car-diagnostic-general .img-small-diagnostic {
+    display: flex;
+    padding: 0;
+    border-radius: 5px 5px 0 0;
+  }
+  main section .car-diagnostic-general .smalldisp-diagnostic .list-diagnostic {
+    right: 0;
+    background-color: black;
+    list-style-type: none;
+    font-family: 'Aldrich', sans-serif;
+    font-size: 1rem;
     text-align: center;
-    font-size: 1.5rem;
-    color:black;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+  }
 }
-main section .car-diagnostic-back .pic-diagnostic {
-    color:black;
+main .carinside-description {
+  background-color: white;
+  margin: 0;
+  padding: 30px 0 0 0;
 }
-main section .car-diagnostic-back .pic-diagnostic {
-    background-image: url(../img/diagnostic.jpg);
-    background-position: center;
-    background-size: cover;
-    min-height: 350px;  
+main .carinside-description .carinside-slogan,
+.carinside-list-text,
+.carinside-list-end-text {
+  display: block;
+  color: white;
+  background-color: black;
+  margin: 0;
+  border: 30px solid black;
+  font-size: 1.25rem;
+}
+main .carinside-description .carinside-list-text .arrows {
+  list-style-type: circle;
+}
+main .engine-wallpaper {
+  margin: 0;
+  background-image: black;
+  padding: 50px 0 0 0;
+}
+main .engine-wallpaper .pic-engine-wallpaper {
+  display: block;
+  width: 100%;
 }
