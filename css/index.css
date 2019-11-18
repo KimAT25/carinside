@@ -92,7 +92,7 @@ header .banner .main-text-underline {
     justify-content: center;
   }
   li {
-    padding: 5px 0 5px;
+    padding: 5px;
   }
 }
 main .text-about-site {
@@ -273,9 +273,6 @@ input[type='submit']:hover {
     margin: 5px 0 5px 0;
   }
 }
-main section .car-diagnostic-main-h {
-  background-color: white;
-}
 main section .car-diagnostic-h .white-color-cbc {
   background-color: white;
   color: black;
@@ -378,7 +375,7 @@ main section .car-diagnostic-general .smalldisp-diagnostic {
     display: flex;
     width: 100%;
     padding: 0;
-    border-radius: 5px 5px 0 0;
+    border-radius: 0;
   }
   main section .car-diagnostic-general .smalldisp-diagnostic .list-diagnostic {
     right: 0;
@@ -387,14 +384,13 @@ main section .car-diagnostic-general .smalldisp-diagnostic {
     font-family: 'Aldrich', sans-serif;
     font-size: 1rem;
     text-align: center;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0;
     margin: 0;
   }
 }
 main .carinside-description {
   background-color: white;
   margin: 0;
-  padding: 30px 0 0 0;
 }
 main .carinside-description .carinside-slogan,
 .carinside-list-text,
@@ -417,4 +413,72 @@ main .engine-wallpaper {
 main .engine-wallpaper .pic-engine-wallpaper {
   display: block;
   width: 100%;
+}
+main section .car-maintenance-h-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 250px 1fr;
+  background-color: white;
+  margin: 0;
+  padding-top: 80px;
+}
+main section .car-maintenance-sp-text {
+  grid-column: 3/4;
+  background-color: black;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0 5px 0;
+  text-align: center;
+}
+main section .car-maintenance-general-text {
+  list-style-type: none;
+  padding: 30px 15px 30px 30px;
+  font-size: 1.5rem;
+
+  margin: 50px 10px 50px 10px;
+}
+main section .car-maintenance-link {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+main section .car-maintenance-link .car-maintenance-expert-link {
+  grid-column: 2/3;
+  background-color: white;
+  color: black;
+  font-family: 'Aldrich', sans-serif;
+  text-align: center;
+  font-size: 1.15rem;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0 10px 0;
+}
+main section .car-maintenance-link .car-maintenance-expert-link .expert-link {
+  color: black;
+}
+main section .auto-news-h {
+  background-color: white;
+  color: black;
+  margin: 0;
+  padding: 70px 15px 25px 15px;
+}
+main section .auto-news-links .tests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+  margin: 0;
+  padding: 15px;
+  list-style-type: none;
+}
+main section .auto-news-links .tests .test-link {
+  padding:10px 20px 10px 20px;
+}
+main section .contact-h {
+  margin:0;
+  background-color: white;
+  padding: 75px 0 0 0;
+}
+main section .contact-h .contact-sp {
+  background-color: black;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  padding: 10px ;
 }
