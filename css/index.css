@@ -330,41 +330,6 @@ main section .car-diagnostic-general .smalldisp-diagnostic {
   main section .car-diagnostic-general .banner-pic-diagnostic {
     display: none;
   }
-  main section .car-diagnostic-general .car-diagnostic-main-text {
-    margin: 0 25px 15px 25px;
-    padding-top: 30px;
-    text-align: right;
-    font-size: 1.15rem;
-    color: black;
-  }
-  main section .car-diagnostic-general .smalldisp-diagnostic {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 50px 50px 1fr 50px;
-  }
-  .img-small-diagnostic {
-    border-radius: 5px;
-    grid-column: 1/2;
-    grid-row: 1/4;
-    width: 100%;
-  }
-  .list-diagnostic {
-    grid-column: 2/3;
-    grid-row: 3/5;
-  }
-  main section .car-diagnostic-general .smalldisp-diagnostic .list-diagnostic {
-    position: relative;
-    right: 15px;
-    background-color: black;
-    list-style-type: none;
-    font-family: 'Aldrich', sans-serif;
-    font-size: 1.1rem;
-    text-align: left;
-    padding: 25px 5px 25px 5px;
-    border-radius: 5px;
-  }
-}
-@media screen and (max-width: 550px) {
   main section .car-diagnostic-general .banner-pic-diagnostic {
     display: none;
   }
@@ -392,6 +357,9 @@ main .carinside-description {
   background-color: white;
   margin: 0;
 }
+main .carinside-description .carinside-slogan {
+  padding: 50px 0 0 0;
+}
 main .carinside-description .carinside-slogan,
 .carinside-list-text,
 .carinside-list-end-text {
@@ -400,9 +368,9 @@ main .carinside-description .carinside-slogan,
   background-color: black;
   margin: 0;
   border: 30px solid black;
-  font-size: 1.25rem;
+  font-size: 1.35rem;
 }
-main .carinside-description .carinside-list-text .arrows {
+main .carinside-description .carinside-list-text .circle {
   list-style-type: circle;
 }
 main .engine-wallpaper {
@@ -469,10 +437,10 @@ main section .auto-news-links .tests {
   list-style-type: none;
 }
 main section .auto-news-links .tests .test-link {
-  padding:10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
 }
 main section .contact-h {
-  margin:0;
+  margin: 0;
   background-color: white;
   padding: 75px 0 0 0;
 }
@@ -480,5 +448,39 @@ main section .contact-h .contact-sp {
   background-color: black;
   color: white;
   border-radius: 10px 10px 0 0;
-  padding: 10px ;
+  padding: 10px;
+}
+main .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  padding: 25px;
+}
+main .contact-info .contact-info-frst,
+.contact-info-expt {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 50px 20px 50px;
+  text-align: center;
+}
+main .map {
+  background-color: white;
+}
+main .size-googlemap {
+  width: 100%;
+  height: 450px;
+  border: 5px solid white;
+}
+main .links {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: white;
+}
+footer p {
+  text-align: center;
+}
+footer p .footer-text {
+  font-style: italic;
 }
