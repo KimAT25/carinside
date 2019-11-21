@@ -35,13 +35,15 @@ header .logo {
   font-size: 3rem;
   padding: 15px 0 5px 15px;
 }
+header .burger-btn {
+  display: none;
+}
 header nav .menu {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
   padding: 0;
 }
-
 header nav .menu {
   font-size: 0.95rem;
   text-align: center;
@@ -85,8 +87,14 @@ header .banner .main-text-underline {
   text-transform: uppercase;
 }
 @media screen and (max-width: 750px) {
+  header .burger-btn {
+    display:flex;
+    border-radius: 5px;
+    background-color: white;
+    margin:10px;
+  }
   header nav .menu {
-    display: block;
+    display: none;
   }
   header .logo {
     justify-content: center;

@@ -22,4 +22,13 @@
       })
     }).then(_ => document.querySelector('.check-and-buy').reset());
   }
+  document.querySelector('.burger-btn').addEventListener('click', burgerMenu);
+  function burgerMenu() {
+    let burgerMenuBtn = document.querySelector('.menu');
+    if (burgerMenuBtn.style.display === 'block') {
+      burgerMenuBtn.style.display = 'none';
+    } else {
+      burgerMenuBtn.style.display = 'block';
+    }
+  }   
 })();
