@@ -90,8 +90,8 @@ header .banner .main-text-underline {
   header .burger-btn {
     display:flex;
     border-radius: 5px;
-    background-color: white;
     margin:10px;
+    padding: 5px;
   }
   header nav .menu {
     display: none;
