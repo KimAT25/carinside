@@ -461,9 +461,21 @@ main section .contact-h .contact-sp {
 main .contact-info {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-
+  justify-content: space-around;
   padding: 25px;
+}
+main .contact-info .calendar {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+main .contact-info .calendar .calendar-month, .calendar-dates {
+  padding:5px;
+  text-align: center;
+  font-family: 'Aldrich', sans-serif;
+}
+main .contact-info .calendar .calendar-month-year, .calendar-dates {
+  color: black;
 }
 main .contact-info .contact-info-frst,
 .contact-info-expt {
